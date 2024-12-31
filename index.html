@@ -1,0 +1,91 @@
+<!--
+
+===BELANGRIJK===
+AAN DEZE PAGINA MAG JE NIETS WIJZIGEN AAN DE HTML OF CSS CODE.
+ENKEL JE NAAM, KLAS, LEERKRACHT EN STUDENTENNUMMER MOETEN WORDEN INGEVULD.
+
+[NAAM] = Wout Maesen
+[KLAS] = 1TINc
+[LEERKRACHT] = Bart Duisters
+[STUDENTENNUMMER] = 12400283
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form p {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: #fff;
+        }
+        .pdf-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            text-align: center;
+        }
+        .pdf-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="oef1/oef1.html">Oef1</a></li>
+            <li><a href="oef2/oef2.html">Oef2</a></li>
+            <li><a href="oef3/oef3.html">Oef3</a></li>
+        </ul>
+    </nav>
+    <form>
+        <label for="name">Naam:</label>
+        <p id="name">[Naam] = Wout Maesen</p>
+
+        <label for="class">Klas:</label>
+        <p id="class">[Klas] = 1TINc</p>
+
+        <label for="teacher">Leerkracht:</label>
+        <p id="teacher">[Leerkracht] = Bart Duisters</p>
+
+        <label for="student-number">Studentennummer:</label>
+        <p id="student-number">[Studentennummer] = 12400283</p>
+    </form>
+    <a href="web_essentials.pdf" target="_blank" class="pdf-button">Download Opdracht</a>
+</body>
+</html>

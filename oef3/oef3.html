@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- naam: Wout Maesen             -->
+<head>
+    <meta charset="UTF-8">
+    <title>Oef3</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/oef3/assets/css/oef3.css">
+</head>
+<body>
+<h1>Mussen vs Vinken</h1>
+<form action="/oef3/waarneming.html" method="post">
+    <fieldset>
+        <legend>Algemeen</legend>
+        <label class="algemeen" for="datum">Datum:</label>
+        <input class="algemeen" type="date" id="datum" name="datum" required>
+        <br>
+        <label class="algemeen" for="tijd">Tijd:</label>
+        <select class="algemeen" name="tijd" id="tijd">
+            <option value="0_6">0u-6u</option>
+            <option value="6_12">6u-12u</option>
+            <option value="12_18">12u-18u</option>
+            <option value="18_24">18u-24u</option>
+        </select>
+        <br>
+        <label class="algemeen" for="neerslag">Neerslag:</label>
+        <input type="radio" id="neerslag" name="neerslag" value="geen"> <label for="neerslag">geen</label>
+        <input type="radio" id="matig" name="neerslag" value="matig"> <label for="matig">matig</label>
+        <input type="radio" id=" overvloedig" name="neerslag" value="overvloedig"> <label
+            for=" overvloedig">overvloedig</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Vogels</legend>
+        <div class="vogels">
+            <img class="vogels" src="/oef3/assets/images/mus.png" alt="Mus">
+            <div class="formuliergedeelte">
+                <label class="naar_boven" for="aantal_mussen">#Mussen:</label>
+                <input class="naar_boven" type="number" id="aantal_mussen" name="mussen" min="0" max="10"
+                       placeholder="0" required>
+                <label class="naar_boven" for="zekerheid_mus">zeker:</label>
+                <input class="naar_boven" type="range" id="zekerheid_mus" name="zekerheid_mussen" min="0" max="100"
+                       step="1" value="50" required>
+            </div>
+        </div>
+        <br>
+        <div class="vogels">
+            <img class="vogels" src="/oef3/assets/images/vink.png" alt="Vink">
+            <div class="formuliergedeelte">
+                <label class="naar_boven" for="aantal_vinken">#Vinken:</label>
+                <input class="naar_boven" type="number" id="aantal_vinken" name="vinken" min="0" max="10"
+                       placeholder="0" required>
+                <label class="naar_boven" for="zekerheid_vink">zeker:</label>
+                <input class="naar_boven" type="range" id="zekerheid_vink" name="zekerheid_vinken" min="0" max="100"
+                       step="1" value="50" required>
+            </div>
+        </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Acties</legend>
+        <input type="submit" id="submit" name="submit" value="registreer">
+        <input type="reset" id="reset" name="reset" value="maak leeg">
+    </fieldset>
+</form>
+</body>
+</html>
+
+<!-- http://localhost:63342/webessentials-tin-2425-pe-Wout8624/oef3/oef3.html?datum=2024-12-01&tijd=6_12&mussen=4&zekerheid_mussen=30&vinken=2&zekerheid_vinken=85&submit=registreer  -->

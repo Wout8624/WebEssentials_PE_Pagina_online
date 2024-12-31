@@ -1,0 +1,60 @@
+/* 
+    naam: Wout Maesen
+*/
+
+
+/*
+    blauw = #4D6D8F;
+    geel =  #FEFF63;
+*/
+
+table, td, th, tr {
+    /*border: 3px solid black;*/
+    text-align: center;
+    padding: 4px;
+    border-collapse: collapse;
+}
+
+table {
+    width: 600px;
+    height: 400px;
+    border: 3px solid black;
+}
+
+#foto {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+#bird {
+    width: 180px;
+    height: 180px;
+    border: 5px solid grey;
+    border-radius: 150px;
+    background-color: white;
+}
+
+.blauw {
+    font-size: 17px;
+    background-color: #4D6D8F;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    border: 3px solid black;
+}
+
+.geel {
+    background-color: #FEFF63;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+.wit {
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+.blauw > td {
+    border: 3px solid black;
+}
